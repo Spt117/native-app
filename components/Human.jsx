@@ -5,7 +5,7 @@ export default function Human() {
         <>
             <Text>Coucou JB ! Cool, ça marche !</Text>
             <Text>Pas mal du tout !</Text>
-            <Text>Je suis content !</Text>
+            <Text style={{ color: "blue", backgroundColor: "red" }}>Je suis content !</Text>
             <Text>Dur...</Text>
         </>
     );
