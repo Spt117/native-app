@@ -1,21 +1,21 @@
 import React, { createContext, useContext, useState } from "react";
 
 const MyContext = createContext({
-    myButton: false,
-    setMyButton: () => {},
+    boolSetting: false,
+    setBoolSetting: () => {},
     myAppState: 0,
     setMyAppState: () => {},
 });
 
 export const MyContextProvider = ({ children }) => {
-    const [myButton, setMyButton] = useState(false);
+    const [boolSetting, setBoolSetting] = useState(false);
     const [myAppState, setMyAppState] = useState(0);
 
     return (
         <MyContext.Provider
             value={{
-                myButton,
-                setMyButton,
+                boolSetting,
+                setBoolSetting,
                 myAppState,
                 setMyAppState,
             }}
