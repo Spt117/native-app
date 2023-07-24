@@ -1,5 +1,5 @@
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import Human from "./src/components/Human";
+import Human from "./src/components/Home";
 import { MyContextProvider } from "./src/context/AppContext";
 
 export default function App() {
