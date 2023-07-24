@@ -1,12 +1,11 @@
-import { Text } from "react-native";
+import { Button, Text, View } from "react-native";
+import { style } from "../App.style.js";
 
 export default function Human() {
     return (
-        <>
+        <View style={style.container}>
             <Text>Coucou JB ! Cool, ça marche !</Text>
-            <Text>Pas mal du tout !</Text>
-            <Text style={{ color: "blue", backgroundColor: "red" }}>Je suis content !</Text>
-            <Text>Dur...</Text>
-        </>
+            <Button title="Clique-moi !" onPress={() => alert("Coucou !")} />
+        </View>
     );
 }
