@@ -5,11 +5,11 @@ import { useMyContext } from "../context/AppContext";
 const styles = StyleSheet.create({
     closeButton: {
         position: "absolute",
-        top: 20,
-        right: 20,
+        top: 0,
+        right: 30,
     },
     closeButtonText: {
-        fontSize: 30,
+        fontSize: 40,
     },
 });
 

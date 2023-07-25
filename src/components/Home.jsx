@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <View style={style.container}>
-            <Reset />
+            {(myAppState > 0 || boolSetting) && <Reset />}
             {myAppState === 0 && (
                 <>
                     <TouchableOpacity disabled={!boolSetting} style={style.button}></TouchableOpacity>
